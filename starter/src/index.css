@@ -321,3 +321,27 @@ main {
   align-self: flex-start;
   min-width: 2rem;
 }
+
+/* styles.css */
+.question {
+  margin-bottom: 1rem;
+}
+
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question p {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, padding 0.6s ease; /* Include padding in the transition */
+  padding: 0 1rem;
+}
+
+.question p.show {
+  max-height: 500px; /* You may need to adjust this value */
+  padding: 0.5rem 0.5rem;
+}

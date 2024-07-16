@@ -11,7 +11,7 @@ const SingleQuestion = ({ id, title, info, activeID, toggleQuestion }) => {
           {isActive ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
-      {isActive && <p>{info}</p>}
+      <p className={isActive ? 'show' : ''}>{info}</p>
     </article>
   );
 }
